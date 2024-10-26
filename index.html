@@ -1,0 +1,51 @@
+<html>
+<head>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 2fr 1fr;
+            width: 300px;
+            height: 300px;
+            border: 4px solid black;
+        }
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+        }
+        .inner-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            padding: 15px;
+            border: 4px color = black;
+        }
+        .inner-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" style="grid-row: 1 / span 2;">A</div>
+        <div class="inner-container" style="grid-row: 1 / span 2;">
+            <div class="inner-item">B</div>
+            <div class="inner-item">C</div>
+            <div class="inner-item">D</div>
+            <div class="inner-item">E</div>
+        </div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
